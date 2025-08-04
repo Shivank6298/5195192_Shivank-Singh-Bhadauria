@@ -1,0 +1,42 @@
+// printing the days of the week
+#include <stdio.h>
+int main()
+{
+    int day;
+    for (int i = 1; i < 8;)
+    {
+        printf("Enter any day between 1 to 7:");
+        scanf("%d", &day);
+
+        switch (day)
+        {
+        case 1:
+            printf(" Monday \n");
+            break;
+        case 2:
+            printf(" Tuesday \n");
+            break;
+        case 3:
+            printf(" Wednesday \n");
+            break;
+        case 4:
+            printf(" Thursday \n");
+            break;
+        case 5:
+            printf(" Friday \n");
+            break;
+        case 6:
+            printf(" Saturday \n");
+            break;
+        case 7:
+            printf(" Sunday \n");
+            break;
+        default:
+            printf("Enter the correct choice \n");
+            break;
+        }
+        printf("\"To get out from the code press ctrl+c\" \n ");
+    }
+
+    return 0;
+}
